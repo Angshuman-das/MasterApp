@@ -35,7 +35,7 @@ struct StockListView<VM: StockListViewModelProtocol>: View {
         }
         .navigationTitle("Stock List")
         .toolbar {
-            ToolbarItem(placement: .topBarLeading) {
+            ToolbarItem(placement: .topBarTrailing) {
                 NavigationLink {
                     StockWishlistView()
                 } label: {
