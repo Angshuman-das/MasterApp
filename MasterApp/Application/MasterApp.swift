@@ -6,14 +6,16 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct MasterAppApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationStack {
-                StockListView()
+                TodoView(viewModel: TodoViewModel())
             }
         }
+        .modelContainer(for: TodoItem.self)
     }
 }
