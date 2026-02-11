@@ -21,7 +21,7 @@ final class NetworkManager: NetworkManagerProtocol {
         _ requestGenerator: RequestGeneratorProtocol,
         _ decoder: DecoderProtocol
     ) async throws -> T where T : Decodable {
-        var request = try requestGenerator.generate(target)
+        let request = try requestGenerator.generate(target)
         
         var data: Data
         var response: URLResponse

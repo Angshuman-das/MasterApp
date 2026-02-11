@@ -13,7 +13,7 @@ struct MasterAppApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationStack {
-                TodoView(viewModel: TodoViewModel())
+                HomeScreen(viewModel: HomeViewModel())
             }
         }
         .modelContainer(for: TodoItem.self)
